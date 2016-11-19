@@ -63,7 +63,7 @@ The RDF Schema specification (https://www.w3.org/TR/rdf-schema/) defines some ba
 ### Class prefixes
 Note that the discrepancy in the above use of "rdf:" vs "rdfs:" is not a typo.  Because of how various RDF schemas evolved over time, prefixes on various rdf classes may differ.  A prefix is actually a stand-in for a full base URL that is used to aid readability.  In this case, the prefix "rdf:" actually refers to the namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#".  Such that "rdf:type" fully expanded is "http://www.w3.org/1999/02/22-rdf-syntax-ns#type.  Similarly, the prefix "rdfs:" refers to namespace "http://www.w3.org/2000/01/rdf-schema#", such that the class "rdfs:label" actually refers to "http://www.w3.org/2000/01/rdf-schema#label".  
 
-## Web Ontology Language (OWL)
+### Web Ontology Language (OWL)
 OWL deserves a special mention, and here we will give a brief explanation.  OWL is a widely-used extension of the "RDF Schema" specification.  the "owl:" prefix refers to the namespace "http://www.w3.org/2002/07/owl#".  An example class from the "owl:" namespace is owl:sameAs.  To type a triple "<subject> <owl:sameAs> <object>" indicates that subject and object are identical.  owl:sameAs as a property is useful when reconciling disparate schemas, to indicate that two graph vertexes are duplicates of one another.
 
 ## Finding and Understanding Other Published RDF Schemas
