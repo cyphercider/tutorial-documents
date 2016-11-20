@@ -50,7 +50,7 @@ Because a string in N-triples format can be any length and contain any number of
 ```
 
 ### Predicates as Vertices
-It is important to note that <knows> can also be a vertex in the graph and be assigned properties to provide context.  For example, the identifier <knows> may have a description "Indicates that a person knows another person".  <knows> can be associated with this description by adding another triple to the graph:
+It is important to note that identifers used as predicates in a graph can also be vertices.  For example, the identifier `<knows>` may have a description "Indicates that a person knows another person".  `<knows>` can be associated with this description by adding another triple to the graph:
 
 ```
 <knows> <hasDescription> "Indicates that a person knows anther person."
