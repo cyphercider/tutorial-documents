@@ -30,8 +30,10 @@ RDF is not a "language" but rather a set of concepts.  There are several concret
 The N-Triples concrete syntax is a collection of an arbitrary number (N) of triples.  These triples are saved in a string, where each triple is:
 
 1. On its own line
-2. Composed of a subject, object, and predicate which are surrounded by angle brackets and separated by a space
-3. Terminated with a space followed by a period (" .").  
+1. Composed of a subject, object, and predicate, each of which is separated by a space
+   1. Identifiers are surrounded by angle brackets
+   1. Literals are surrounded by double quotes
+1. Terminated with a space followed by a period (" .").  
 
 Using our example above, the relationship between Bob and Samantha can be expressed in N-triples syntax as:
 
@@ -45,6 +47,13 @@ Because a string in N-triples format can be any length and contain any number of
 <Bob> <knows> <Samantha>
 <Samantha> <knows> <Bob> .
 <Bob> <is the spouse of> <Carolyn> .
+```
+
+### Predicates as Vertices
+It is important to note that <knows> can also be a vertex in the graph and be assigned properties to provide context.  For example, the identifier <knows> may have a description "Indicates that a person knows another person".  <knows> can be associated with this description by adding another triple to the graph:
+
+```
+<knows> <hasDescription> "Indicates that a person knows anther person."
 ```
 
 ## What is an RDF Schema
