@@ -46,7 +46,7 @@ Because a string in N-triples format can be any length and contain any number of
 ```
 <Bob> <knows> <Samantha>
 <Samantha> <knows> <Bob> .
-<Bob> <is the spouse of> <Carolyn> .
+<Bob> <isTheSpouseOsf> <Carolyn> .
 ```
 
 ### Predicates as Vertices
