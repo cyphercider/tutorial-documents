@@ -1,3 +1,5 @@
+Version 1.0 post review:
+
 # Beginner's Guide to Graph Database Schema Design
 
 ## Overview of this Guide
@@ -46,7 +48,7 @@ Because a string in N-triples format can be any length and contain any number of
 ```
 <Bob> <knows> <Samantha>
 <Samantha> <knows> <Bob> .
-<Bob> <isTheSpouseOsf> <Carolyn> .
+<Bob> <isTheSpouseOf> <Carolyn> .
 ```
 
 ### Predicates as Vertices
